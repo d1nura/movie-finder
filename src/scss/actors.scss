@@ -1,0 +1,16 @@
+.actors {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+#actor-cover {
+  img {
+    width: 12vw;
+    margin-right: 1vw;
+    border-radius: 0.5rem;
+  }
+  p {
+    width: 100%;
+    // color: rgb(187, 238, 181);
+  }
+}

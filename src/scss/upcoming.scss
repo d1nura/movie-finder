@@ -1,0 +1,93 @@
+.upcoming {
+  // border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  background: black;
+  z-index: 1;
+}
+
+#u-slide {
+  // border: 1px solid red;
+  background: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    opacity: 0.8;
+  }
+  h1 {
+    color: rgb(205, 224, 255);
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+    padding: 4vh 0.5vw 1vh 1vw;
+    transition: 0.4s;
+    &:hover {
+      text-decoration-line: overline underline;
+      // text-decoration: str
+    }
+  }
+  p {
+    color: grey;
+    padding: 1vh 0.5vw 1vh 1vw;
+    font-size: 1.3vw;
+    line-height: 1.8vw;
+    letter-spacing: 0.1vw;
+  }
+}
+
+#upcoming-show {
+  // border: 1px solid orange;
+  overflow: hidden;
+}
+
+#down-arrow {
+  position: absolute;
+  color: rgb(245, 47, 47);
+  z-index: 100;
+  cursor: pointer;
+  // border: 1px solid red;
+  width: 45%;
+  height: 10vh;
+  bottom: 0%;
+  left: 0%;
+  // background: rgb(0, 0, 0);
+  // opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    position: relative;
+    width: 2.5rem;
+    z-index: 10;
+  }
+}
+
+#upcoming-covers {
+  position: fixed;
+  padding: 0vh 1vw 0vh 1vw;
+  // border: 1px solid green;
+  width: 55%;
+  height: 100vh;
+  left: 45%;
+  top: 10vh;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vw;
+  img {
+    width: 100%;
+    opacity: 0.9;
+    transition: 0.5s;
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
+}

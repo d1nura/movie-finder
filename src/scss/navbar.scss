@@ -1,0 +1,28 @@
+.navbar {
+  width: 100%;
+  height: 10vh;
+  // border-bottom: 0.1px solid rgb(112, 112, 112);
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+  padding-right: 3vw;
+  a {
+    // border-bottom: 0.1px solid rgb(112, 112, 112);
+    height: 10vh;
+    line-height: 10vh;
+    color: rgb(243, 243, 243);
+    text-transform: uppercase;
+    padding-left: 2.5vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    transition: 0.4s;
+    &:hover {
+      color: rgb(240, 240, 240);
+      font-size: 1.2vw;
+      // transform: rotateZ(2deg);
+      text-shadow: 2px 2px 0.8rem rgb(255, 255, 255);
+    }
+  }
+}

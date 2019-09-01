@@ -1,0 +1,19 @@
+.similar-movies {
+  //   border: 1px solid red;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+#similar-movie-cover {
+  img {
+    width: 12vw;
+    margin-right: 1vw;
+    border-radius: 0.4rem;
+  }
+  a {
+    color: white;
+  }
+  p {
+    width: 100%;
+  }
+}
