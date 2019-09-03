@@ -8,7 +8,8 @@
   align-items: center;
   z-index: 100;
   padding-right: 3vw;
-  a {
+  #nav-a {
+    cursor: pointer;
     // border-bottom: 0.1px solid rgb(112, 112, 112);
     height: 10vh;
     line-height: 10vh;
@@ -17,10 +18,11 @@
     padding-left: 2.5vw;
     font-size: 1.1vw;
     font-weight: bold;
+    // overflow: hidden;
     transition: 0.4s;
     &:hover {
-      color: rgb(240, 240, 240);
-      font-size: 1.2vw;
+      color: rgb(218, 142, 1);
+      // font-size: 1.15vw;
       // transform: rotateZ(2deg);
       text-shadow: 2px 2px 0.8rem rgb(255, 255, 255);
     }

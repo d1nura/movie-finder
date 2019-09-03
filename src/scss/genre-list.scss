@@ -1,0 +1,68 @@
+$h-clr: rgb(245, 94, 67);
+.genreList {
+  //   border: 1px solid red;
+  position: absolute;
+  width: 0vw;
+  height: 100vh;
+  top: 0vh;
+  right: 0;
+  background: black;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.2s;
+  a {
+    // transition: 0.2s;
+    position: relative;
+    left: -0.1vw;
+    // padding: 0.1vh 0 0.1vh 2vw;
+    padding-left: 2vw;
+    padding-bottom: 1px;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin: 0vh 1vw 0vh 2vw;
+    // border-left: 5px solid rgb(119, 119, 119);
+    color: white;
+    z-index: 10;
+    &:hover {
+      color: $h-clr;
+      border-left: 5px solid $h-clr;
+    }
+  }
+}
+
+#genre-line {
+  position: absolute;
+  top: 0;
+  margin-left: 2vw;
+  //   left: 0;
+  border: 1px solid rgb(68, 68, 68);
+  width: 1px;
+  height: 100%;
+}
+
+#genre-name {
+  //   color: $h-clr;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  //   right: 0;
+  font-size: 4vw;
+  //   border: 1px solid red;
+  opacity: 0.2;
+  //   writing-mode: vertical-rl;
+  padding: 1vw;
+}
+
+#close-btn {
+  position: absolute;
+  top: 2vh;
+  right: 1vw;
+  z-index: 12;
+  img {
+    width: 3vw;
+    cursor: pointer;
+  }
+}

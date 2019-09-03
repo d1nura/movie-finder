@@ -43,19 +43,19 @@
     position: absolute;
     color: white;
     z-index: 12;
-    top: 30vh;
+    top: 20vh;
     left: 0;
     writing-mode: vertical-lr;
     text-orientation: upright;
     height: 50%;
     // word-spacing: 0.5rem;
     letter-spacing: 0.5rem;
-    padding: 2vh;
-    color: rgb(191, 255, 191);
+    padding: 2vw;
+    color: rgb(255, 255, 255);
     transition: 1.5s;
     text-transform: uppercase;
     opacity: 0;
-    font-size: 2vw;
+    font-size: 4vw;
   }
   &:hover {
     width: 100%;

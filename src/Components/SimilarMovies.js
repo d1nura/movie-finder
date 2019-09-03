@@ -13,7 +13,7 @@ function SimilarMovies({ match }) {
             //   console.log(item.id);
             return (
               <div id="similar-movie-cover" key={index}>
-                <Link to={`/movie-details/${item.id}`}>
+                <Link to={`/movie_details/${item.id}`}>
                   <img
                     alt="movie-cover"
                     src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}

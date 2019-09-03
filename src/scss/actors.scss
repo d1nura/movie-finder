@@ -1,7 +1,34 @@
 .actors {
+  position: relative;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  // border: 1px solid red;
+
+  #see-all {
+    // border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: -7vh;
+    // bottom: 50vh;
+    // right: 0;
+    width: auto;
+    font-size: 1.8vw;
+    // font-weight: bolder;
+    // text-align: right;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    img {
+      width: 1.5vw;
+      margin-left: 1vw;
+    }
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
 }
 #actor-cover {
   img {
@@ -10,7 +37,9 @@
     border-radius: 0.5rem;
   }
   p {
-    width: 100%;
-    // color: rgb(187, 238, 181);
+    width: 90%;
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: rgb(232, 236, 255);
   }
 }

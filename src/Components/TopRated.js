@@ -3,6 +3,7 @@ import "../scss/top-rated.scss";
 import useHttp from "../hooks/http";
 import { Link } from "react-router-dom";
 import arrow from "../pics/downarrow.svg";
+import heart from "../pics/1.png";
 
 function TopRated() {
   const [data, loading] = useHttp("movie/top_rated");
@@ -50,12 +51,18 @@ function TopRated() {
         <div className="rated-covers">
           {data.results.slice(5, data.results.length).map((item, index) => {
             return (
-              <div id="rated-cover-pic">
+              <div id="rated-cover-pic" key={index}>
                 <Link to={`movie_details/${item.id}`}>
                   <img
                     src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                     alt="movie-pic"
                   ></img>
+                  <p>
+                    <img src={heart} alt="rating"></img>
+                    {item.vote_average}
+                  </p>
+                  <h3>{item.title}</h3>
+                  <h4>{item.release_date.split("-")[0]}</h4>
                 </Link>
               </div>
             );

@@ -14,6 +14,15 @@
     color: white;
   }
   p {
-    width: 100%;
+    width: 90%;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+  }
+  transition: 0.5s;
+  &:hover {
+    transform: translateY(2vh);
+    p {
+      color: rgb(255, 255, 255);
+    }
   }
 }

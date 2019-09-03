@@ -1,72 +1,78 @@
 .upcoming {
   // border: 1px solid red;
+  position: relative;
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 45% 55%;
   background: black;
   z-index: 1;
-}
-
-#u-slide {
-  // border: 1px solid red;
-  background: rgb(0, 0, 0);
-  width: 100%;
-  height: 100vh;
-  z-index: 9;
-  transition: 0.5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 100%;
-    opacity: 0.8;
-  }
-  h1 {
-    color: rgb(205, 224, 255);
-    font-size: 4vw;
-    letter-spacing: 0.5vw;
-    padding: 4vh 0.5vw 1vh 1vw;
-    transition: 0.4s;
-    &:hover {
-      text-decoration-line: overline underline;
-      // text-decoration: str
-    }
-  }
-  p {
-    color: grey;
-    padding: 1vh 0.5vw 1vh 1vw;
-    font-size: 1.3vw;
-    line-height: 1.8vw;
-    letter-spacing: 0.1vw;
-  }
+  overflow: hidden;
 }
 
 #upcoming-show {
+  position: relative;
+  top: 0;
+  left: 0;
   // border: 1px solid orange;
   overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#u-slide {
+  position: relative;
+  // border: 1px solid green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2vh 0vw 20vh 1vw;
+  overflow: hidden;
+  width: 100%;
+  min-height: 110vh;
+  transition: 0.5s;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  h1 {
+    color: white;
+    font-size: 3vw;
+    padding: 1vh 0 2vh 1vw;
+    text-transform: uppercase;
+    // text-align: center;
+    &:hover {
+      text-decoration: overline underline;
+    }
+  }
+  p {
+    color: rgb(228, 232, 255);
+    font-size: 1.3vw;
+    // text-align: center;
+    padding: 0vh 1vw 5vh 1vw;
+    letter-spacing: 1px;
+    // line-height: 1.8vw;
+    width: 90%;
+  }
 }
 
 #down-arrow {
   position: absolute;
-  color: rgb(245, 47, 47);
-  z-index: 100;
   cursor: pointer;
   // border: 1px solid red;
+  background: black;
+  opacity: 0.4;
+  bottom: 0;
+  left: 0;
   width: 45%;
   height: 10vh;
-  bottom: 0%;
-  left: 0%;
-  // background: rgb(0, 0, 0);
-  // opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
-    position: relative;
-    width: 2.5rem;
-    z-index: 10;
+    width: 5vw;
   }
 }
 
@@ -80,7 +86,7 @@
   top: 10vh;
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1vw;
   img {
     width: 100%;
@@ -89,5 +95,8 @@
     &:hover {
       filter: grayscale(1);
     }
+  }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
